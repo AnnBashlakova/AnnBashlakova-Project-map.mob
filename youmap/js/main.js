@@ -24,23 +24,6 @@ async function slider() {
     }
 };
 
-//scroll phone
-const phone = document.querySelector('.right_part_img');
-
-
-window.addEventListener('scroll', scrollPhone);
-function scrollPhone() {
-    let vertical_position = pageYOffset;
-    if(vertical_position > 2267){
-        phone.classList.remove('stick');
-        phone.classList.add('position');
-
-    } else {
-        phone.classList.add('stick');
-        phone.classList.remove('position');
-
-    }
-};
 
 
 //animation-phone
@@ -150,7 +133,21 @@ const swiper2 = new Swiper('.swiper2', {
 
     });
 
+//choose-slider
+const swiperChoose = new Swiper('.swiper3', {
     
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    slideToClickedSlide: true,
+    loop: true,
+
+    // If we need pagination
+
+
+    });
+
+
+
 //accordion
 
 
